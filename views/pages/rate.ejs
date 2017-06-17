@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rates</title>
+</head>
+<body style="text-align: center">
+	<h1>Mail Rate</h1>
+	<div id="text">To mail your <%= mailType %> with a weight of <%= weights %>ozs will cost <b>$<%= cost %></b></div>
+	<script>
+                var rate = "<%= cost %>";
+                if (isNaN(rate)) {
+                        document.getElementById('text').innerHTML = rate;
+                }
+        </script>
+</body>
+</html>

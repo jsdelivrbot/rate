@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Postal Rate Calculator</title>
+<link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+</head>
+
+<body>
+ <h1>Postal Rate Calculator</h1>
+ <form method="get" action="/rate">
+ 	<table>
+ 		<tr>
+ 			<td class="title">Weight:</td>
+ 			<td class="input"><input style="width: 60px;" step="0.1" type="number" name="weight"/>oz</td>
+ 		</tr>
+ 		<tr>
+ 			<td class="title">Mail Type:</td>
+ 			<td class="input">
+ 				<select name="mail">
+ 					<option>Letters (Stamped)</option>
+ 					<option>Letters (Metered)</option>
+ 					<option>Large Envelopes (Flats)</option>
+ 					<option>Parcels</option>
+ 				</select>	
+ 			</td>
+ 		</tr>
+ 		<tr>
+ 			<td colspan="2" style="text-align: right"><button type="submit">Find Rates</button></td>
+ 		</tr>
+ 	</table>
+ </form>
+</body>
+</html>
